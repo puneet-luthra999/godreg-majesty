@@ -2,26 +2,203 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.menuItem {
+  color: black;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem; 
+  margin-left: 0.10rem;    
+  margin-right: 0.10rem;  
+  border-radius: 6px; 
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.menuItem:hover {
+  color: white;
+  background: linear-gradient(135deg, #8B4513, #FFD700);
+}
+
+.icon-style {
+  font-size: 28px;
+  border: 1.5px solid black;
+  margin-right: 1.25rem; /* Tailwind's mr-9 = 2.25rem */
+  border-radius: 9999px;  /* rounded-full */
+}
+
+.icon-box {
+  display: flex;
+  border-radius: 20px;
+  background: white;
+  align-items: center;
+  padding: 1.5rem;         /* p-6 = 1.5rem (24px) */
+  margin-bottom: 1rem;     /* mb-4 = 1rem (16px) */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: background 0.3s ease;
+}
+
+.icon-box:hover {
+  background: linear-gradient(to right, #facc15, #a16207);
+}
+
+.loc-style {
+  font-size: 28px;
+  margin-right: .50rem; /* Tailwind's mr-9 = 2.25rem */
+}
+
+.loc-box {
+  display: flex;
+  border-radius: 6px;
+  background: white;
+  align-items: center;
+  padding: .5rem;         /* p-6 = 1.5rem (24px) */
+  margin-bottom: 1rem;     /* mb-4 = 1rem (16px) */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition: background 0.3s ease;
+}
+
+.loc-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.30);
+}
+
+.grid-box2 {
+  display: grid;
+  gap: 4rem; /* gap-4 = 16px */
+  grid-template-columns: 1fr; /* default for small screens (sm) */
+}
+
+/* Medium screens (768px and up): 2 columns */
+@media (min-width: 768px) {
+  .grid-box2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+.heading-style {
+  font-size: 2.25rem;       /* text-4xl = 36px */
+  font-weight: 700;         /* font-bold */
+  text-align: center;       /* text-center */
+  padding: 0.75rem;         /* p-3 = 12px */
+  position: relative;
+}
+
+.heading-style::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 8px auto 0;
+  background: linear-gradient(to right, #facc15, #a16207); /* stylish yellow-brown gradient */
+  border-radius: 2px;
+}
+
+.p-text {
+  font-size: 1.10rem;   /* text-2xl = 24px */
+  text-align: justify;
+}
+
+.section-style {
+  padding: 3.5rem;
+  margin-top: 6rem;
+  border-radius: 0.75rem; /* rounded-lg */
+  background: #f3f4f6; /* similar to Tailwind's bg-gray-100 */
+}
+
+.footer-style {
+  padding: 4rem;
+  margin-top: 6rem;
+  background: #78350f;
+;
+}
+
+.grid-box4 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
+}
+
+.footer-text {
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  color: white;
+  font-weight: 600; /* Tailwind's font-semibold is 600 */
+}
+
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  border-radius: 0.75rem; /* needed again to match the outer border */
+}
+
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Medium screens (md) - 768px and up */
+@media (min-width: 768px) {
+  .grid-box4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large screens (lg) - 1024px and up */
+@media (min-width: 1024px) {
+  .grid-box4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #8B4513, #FFD700); /* brown to yellow */
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.inputBox{
+  padding: 9px 16px;
+  border: 1.5px solid #ea580c;
+  border-radius: 4px;
+ }
+
+.inputBox:focus {
+  outline: 1.5px solid #FFA500;
+  background-color: #FFEBCC;
+}
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  gap: 8px;
+  height: auto;
+  border: 1.5px solid #ea580c;
+  padding: 36px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  width: 400px; 
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white;
 }
