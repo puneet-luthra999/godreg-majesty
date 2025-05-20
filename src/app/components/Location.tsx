@@ -19,7 +19,7 @@ const locations = [
 
   return (
     <div>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
         <div>
           {locations.map((item, index) => (
                 <div key={index} className="loc-box">

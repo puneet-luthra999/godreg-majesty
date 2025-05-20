@@ -55,7 +55,7 @@ const Amenities: React.FC = () => {
         <div>
           <Image
             alt="Godrej Majesty Apartments in sec 12, Greater Noida West"
-            src="/images/Amenities.png"
+            src="/images/amenities.png"
             width={600}
             height={320}
             className="rounded-md"
