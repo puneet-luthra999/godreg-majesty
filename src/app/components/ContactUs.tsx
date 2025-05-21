@@ -28,6 +28,10 @@ const ContactUs: React.FC= () => {
     });
     const data = await res.json();
     setStatus(data.message);
+
+    setTimeout(() => {
+      setStatus('');
+    }, 2000);
     if (res.ok) {
       setFormData({ fullName: '', subject: '', email: '', phone: '', message: '' });
     }
