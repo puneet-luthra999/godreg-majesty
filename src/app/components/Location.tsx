@@ -20,7 +20,7 @@ const locations = [
   return (
     <div>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-        <div>
+        <div className='w-full'>
           {locations.map((item, index) => (
                 <div key={index} className="loc-box">
                     <FiMapPin className="loc-style" />
@@ -29,11 +29,11 @@ const locations = [
                 </div>
             ))}
         </div>
-        <div>
+        <div className='w-full'>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7006.298132707486!2d77.338732!3d28.59530455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce50405b52da5%3A0xa0f00c5abf50f6de!2sSector%2012%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1744546811839!5m2!1sen!2sin"
-            width="600"
             height="450"
+            width="100%"
             allowFullScreen={true}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade">

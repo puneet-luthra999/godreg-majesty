@@ -21,10 +21,10 @@ const NavBar: React.FC = () => {
   ];
 
   return (
-    <div className="relative">
+    <div className="relative shadow-lg">
       <Container>
-        <nav className="flex items-center justify-between py-4 shadow-lg relative z-20 bg-white">
-          <h1 className="text-2xl font-bold text-gray-800 uppercase">Godrej Majesty</h1>
+        <nav className="flex items-center w-full  justify-between py-4 relative z-20">
+          <h1 className="text-2xl  font-bold text-gray-800 uppercase">Godrej Majesty</h1>
 
           {/* Mobile Toggle Button */}
           <button
@@ -62,7 +62,7 @@ const NavBar: React.FC = () => {
       <div
         className={`
           fixed top-[67px] left-0 h-auto bg-amber-800 w-full z-40 md:hidden
-          transform transition-transform duration-300 ease-in-out text-center
+          transform transition-transform duration-300 ease-in-out text-center 
           ${menuOpen ? 'translate-x-0' : '-translate-x-full'}
           shadow-lg
           overflow-auto
@@ -75,7 +75,7 @@ const NavBar: React.FC = () => {
               <a
                 key={id}
                 href={`#${id}`}
-                className="menuItem"
+                className={`menuItem ${menuOpen ? 'text-white' : ''}`}
                 onClick={() => setMenuOpen(false)}
               >
                 {label}
