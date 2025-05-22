@@ -50,15 +50,17 @@ const Amenities: React.FC = () => {
                     </div>
                   );
                 })}
-              </div>
+            </div>
+            <div className='flex flex-col gap-8'><b><i>For more info contact - 9999988388</i></b></div>
         </div>
         <div>
           <Image
             alt="Godrej Majesty Apartments in sec 12, Greater Noida West"
             src="/images/amenities.png"
             width={600}
-            height={320}
+            height={400}
             className="rounded-md"
+            style={{ height: '400px !important' }}
           />
         </div>
       </div>

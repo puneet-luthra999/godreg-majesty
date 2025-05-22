@@ -20,9 +20,10 @@ export default function Home() {
       <NavBar />
       <Image
         alt="Godrej Majesty"
-        src="/images/godrej_majesty.png"
+        src="/images/banner.png"
         width={1520}
-        height={900}
+        height={650}
+        style={{ height: '650px !important' }}
       />
       <Container>
         <section id="about">
@@ -39,6 +40,7 @@ export default function Home() {
               <HighLights2 />
             </div>
           </div>
+          <div className='mx-auto w-max mt-5'><b><i>For more info contact - 9999988388</i></b></div>
         </section>
         <section id="pricelist" className="section-style">
           <h1 className="heading-style mb-9">Price List</h1>

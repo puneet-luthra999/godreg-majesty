@@ -34,10 +34,13 @@ const AboutUs : React.FC = () => {
                 <br />
                 Moreover, convenient access to Jewar International Airport further enhances the project’s
                 appeal, making it an ideal residential choice in the region.
+                <br />
+                <br />
+                <b><i>For more info contact - 9999988388</i></b>
             </p>
         </div>
         <div className="flex flex-col">
-            <Image alt="Godrej Majesty Apartments in sec 12, Greater Noida West" src="/images/insideImg.jpg" width={680} height={400} className="rounded-md"/>
+            <Image alt="Godrej Majesty Apartments in sec 12, Greater Noida West" src="/images/overview.jpg" width={680} height={500} style={{ height: '500px !important' }} className="rounded-md"/>
         </div>
       </div>
     </div>
