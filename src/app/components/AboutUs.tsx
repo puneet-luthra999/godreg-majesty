@@ -36,7 +36,7 @@ const AboutUs : React.FC = () => {
                 appeal, making it an ideal residential choice in the region.
                 <br />
                 <br />
-                <b><i>For more info contact - 9999988388</i></b>
+                <b><i>For more info contact - +919999988388, +918081148289</i></b>
             </p>
         </div>
         <div className="flex flex-col">

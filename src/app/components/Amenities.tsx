@@ -50,9 +50,8 @@ const Amenities: React.FC = () => {
                     </div>
                   );
                 })}
-            </div>
-            <div className='flex flex-col gap-8'><b><i>For more info contact - 9999988388</i></b></div>
-        </div>
+            </div>            
+        </div>        
         <div>
           <Image
             alt="Godrej Majesty Apartments in sec 12, Greater Noida West"
@@ -64,6 +63,7 @@ const Amenities: React.FC = () => {
           />
         </div>
       </div>
+      <div><b><i>For more info contact - +919999988388, +918081148289</i></b></div>
     </div>
   );
 };

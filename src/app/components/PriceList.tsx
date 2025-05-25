@@ -33,7 +33,7 @@ const PriceList: React.FC = () => {
         </div>
       </div>
     </div>
-    <div className='mx-auto w-max mt-5'><b><i>For more info contact - 9999988388</i></b></div>
+    <div className='mx-auto w-max mt-5'><b><i>For more info contact - +919999988388, +918081148289</i></b></div>
     </>
   );
 };
